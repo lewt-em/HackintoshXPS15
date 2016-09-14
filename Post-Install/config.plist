@@ -24,6 +24,8 @@
 				<true/>
 				<key>FixShutdown_0004</key>
 				<true/>
+				<key>FixUSB_1000</key>
+				<true/>
 				<key>NewWay_80000000</key>
 				<true/>
 			</dict>
@@ -32,10 +34,6 @@
 		</dict>
 		<key>DropTables</key>
 		<array>
-			<dict>
-				<key>Signature</key>
-				<string>MCFG</string>
-			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
@@ -47,12 +45,19 @@
 			<false/>
 			<key>Generate</key>
 			<false/>
+			<key>PluginType</key>
+			<string>1</string>
 		</dict>
+		<key>SortedOrder</key>
+		<array>
+			<string>ssdt.aml</string>
+			<string>SSDT-ALC298.aml</string>
+		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>arch=x86_64 dart=0 nv_disable=1</string>
+		<string>dart=0 nv_disable=1 kext-dev-mode=1</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -66,13 +71,9 @@
 	</dict>
 	<key>CPU</key>
 	<dict>
-		<key>C2</key>
-		<true/>
 		<key>C4</key>
 		<true/>
 		<key>C6</key>
-		<true/>
-		<key>QEMU</key>
 		<true/>
 		<key>UseARTFrequency</key>
 		<false/>
@@ -94,6 +95,10 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>DisableDrivers</key>
+	<array>
+		<string>VBoxHfs</string>
+	</array>
 	<key>GUI</key>
 	<dict>
 		<key>Custom</key>
@@ -104,7 +109,7 @@
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>Manjaro KDE</string>
+					<string>Linux</string>
 					<key>Hidden</key>
 					<false/>
 					<key>Ignore</key>
@@ -183,15 +188,15 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
+				<string>10.11.dp1+ BT4LE-Handoff-Hotspot, credit RehabMan based on Dokterdok original</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>AQAAdRc=</data>
+				<data>SIX/dEdIiwc=</data>
 				<key>Name</key>
-				<string>IOGraphicsFamily</string>
+				<string>IOBluetoothFamily</string>
 				<key>Replace</key>
-				<data>AQAA6xc=</data>
+				<data>Qb4PAAAA60Q=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -207,27 +212,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
+				<string>kernel panic like minStolenSize &lt;= fStolenMemorySize</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>AEFQUExFIFNTRAA=</data>
+				<data>QTnEdio=</data>
 				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
-				<data>AAAAAAAAAAAAAAA=</data>
+				<data>QTnE6yo=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>10.11.dp1+ BT4LE-Handoff-Hotspot, credit RehabMan based on Dokterdok original</string>
+				<string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>SIX/dEdIiwc=</data>
+				<data>AQAAdRc=</data>
 				<key>Name</key>
-				<string>IOBluetoothFamily</string>
+				<string>IOGraphicsFamily</string>
 				<key>Replace</key>
-				<data>Qb4PAAAA60Q=</data>
+				<data>AQAA6xc=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -243,15 +248,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>kernel panic like minStolenSize &lt;= fStolenMemorySize</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>QTnEdio=</data>
+				<data>AEFQUExFIFNTRAA=</data>
 				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
-				<data>QTnE6yo=</data>
+				<data>AAAAAAAAAAAAAAA=</data>
 			</dict>
 		</array>
 	</dict>
@@ -275,7 +280,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02Q********</string>
+		<string>C02Q****H2YQ7****</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>ChassisAssetTag</key>
@@ -293,7 +298,7 @@
 		<key>SerialNumber</key>
 		<string>C02Q********</string>
 		<key>SmUUID</key>
-		<string></string>
+		<string>****</string>
 		<key>Trust</key>
 		<false/>
 		<key>Version</key>
@@ -302,7 +307,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
