@@ -275,7 +275,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02Q4BC3H2YQ7F7EC</string>
+		<string>C02Q********</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>ChassisAssetTag</key>
@@ -291,9 +291,9 @@
 		<key>ProductName</key>
 		<string>iMac17,1</string>
 		<key>SerialNumber</key>
-		<string>C02Q4BC3H2YQ</string>
+		<string>C02Q********</string>
 		<key>SmUUID</key>
-		<string>8BC495C9-C53F-450C-A813-159B8CD54558</string>
+		<string></string>
 		<key>Trust</key>
 		<false/>
 		<key>Version</key>
