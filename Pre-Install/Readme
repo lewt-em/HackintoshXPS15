@@ -1,1 +1,5 @@
 These Clover files are for booting the installation of OSX
+
+For Dell XPS 15 9550 FHD
+If installation freezes keep trying or remove any kexts from the kext folder not needed.
+Once installation is complete use the Post-Install Clover folder.
