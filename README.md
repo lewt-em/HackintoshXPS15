@@ -1,9 +1,8 @@
 # HackintoshXPS15 for OSX El-Capitan 10.11.6
 Dell XPS 15 9550 Hackintosh
 
-This git contains Clover folders and configurations for each state of readiness, Pre-Install, Post-Install and Finalised.
-
-NOTE: When creating or editing config.plist use a plist editor in OSX such as Xcode or Textwrangler.
+This git contains Clover folders for each state of readiness from Pre-Install, Post-Install and Finalised.
+Just choose the XPS 15 configuration.
 
 Software used to assist:
 Xcode (plist editor)
