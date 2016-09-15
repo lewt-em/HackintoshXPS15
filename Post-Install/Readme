@@ -1,11 +1,17 @@
 These Clover files are for creating a bootable OSX system after the install process is completed.
 
 For Dell XPS 15 9550 FHD
--usb and webcam support
--Elan touchpad
+
+Once OSX is booted:
+1) Install kexts from kexts\other to s/l/e using kextwizard
+2) Remove the installed kexts from your Clover folder folder
+3) Reboot
+
+Whats working
+-Usb and Webcam
+-Elan touchpad gestures
+-Keyboard backlight
 -AppleALC audio
 -Graphics hardware acceleration
--5ghz wifi
--bluetooth
-
-Install kexts to s/l/e then optimise with ssdts
+-5ghz WiFi
+-Bluetooth
