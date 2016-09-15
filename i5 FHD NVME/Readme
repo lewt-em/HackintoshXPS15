@@ -1,28 +1,3 @@
-These Clover files are for booting the installation of OSX
+For XPS15 9550 with i5 processor and NVME hard disk
 
-Bios Preparation
--disable secureboot
-
-Hard Drive Partition Preparation
-For Dual Booting with Windows it is reccommended to wipe the entire hard disk and contents and create partitions using diskutil in the OSX Installer.
-
-Once OSX Install is booted:
-1) a) For OSX only partition
-    -open diskutil
-    -delete all partitions
-    -create OSX partition HFSJ+
-   b) For Dual Booting OSX with Windows
-    -open diskutil
-    -delete all partitions
-    -create OSX partition HFSJ+
-    -create Windows partition HFSJ+
-2) Install OSX to OSX partition
-3) Reboot
-4) Use Post-Install to run OSX
-
-For Windows Install
-1) Boot Windows Installer
-2) Format/delete the HFSJ+ Windows partition you created in diskutil
-3) Install Windows to that partition
-
-NOTE: If the OSX installer freezes reboot and try again or remove any unnecessary kexts from the clover\kext\other folder
+Yet to be added
