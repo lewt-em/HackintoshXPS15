@@ -4,7 +4,7 @@ For Dell XPS 15 9550 FHD
 
 Once OSX is booted:
 1) Install kexts from kexts\other to s/l/e using kextwizard
-2) Remove the installed kexts from your Clover folder folder
+2) Remove the installed kexts from your Clover folder
 3) Reboot
 
 Whats working
