@@ -1,0 +1,24 @@
+These Clover files are for creating a bootable OSX system after the install process is completed.
+
+For Dell XPS 15 9550 FHD
+Whats working
+-Usb and Webcam
+-Elan touchpad gestures
+-Keyboard backlight
+-AppleALC audio
+-Graphics hardware acceleration
+-5ghz WiFi
+-Bluetooth
+
+We will add the clover folder to the EFI boot partition, install kexts and make Clover bootable from the hard drive.
+
+Once OSX is booted:
+1) Open Clover Configurator and mount EFI Boot drive.
+2) Copy Clover folder into EFI drive
+2) Install kexts from kexts\other to /s/l/e using kextwizard
+3) Remove the installed kexts from your Clover folder
+4) Reboot into Bios
+5) Add Cloverx64.efi into Bios boot list
+6) Save and exit
+
+Clover should now be bootable from hard disk.
