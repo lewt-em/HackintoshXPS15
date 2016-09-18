@@ -1,0 +1,7 @@
+Installation works with NVME drives
+
+1)Boot Clover and format hard drive using disk utility.
+2)Install macOS Sierra and Reboot
+	-macOS Sierra will place the second part of the installation on the hard disk
+3)Boot Clover and select the drive where macOS Installer is installed to
+4)Complete installation
